@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import reactLogo from './assets/react.svg';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
-import HoverShinyEffect from './components/shared/hover-shiny-effect/hover-shiny-effect.tsx';
 
 function App() {
   const [] = useState(0);
