@@ -8,10 +8,10 @@ export default function NavigationBar() {
 
     return (
         <div className='navigation-bar'>
-            <button onClick={() => handleClick('')}>Home</button>
+            <button onClick={() => handleClick('/home')}>Home</button>
             <button onClick={() => handleClick('/about')}>About</button>
-            <button onClick={() => handleClick('/Projects')}>Projects</button>
-            <button onClick={() => handleClick('/Contact')}>Contact</button>
+            <button onClick={() => handleClick('/projects')}>Projects</button>
+            <button onClick={() => handleClick('/contact')}>Contact</button>
             {/* consider having drop down contact menu */}
         </div>
     );
