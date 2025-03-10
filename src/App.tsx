@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
+import { useState, useEffect } from 'react';
+import reactLogo from './assets/react.svg';
 import { useNavigate } from 'react-router-dom';
-import './App.css'
+import './App.css';
+import HoverShinyEffect from './components/shared/hover-shiny-effect/hover-shiny-effect.tsx';
 
 function App() {
-  const [] = useState(0)
+  const [] = useState(0);
   const navigate = useNavigate();
   const handleClick = (path: string) => {
     navigate(path);
@@ -27,7 +28,9 @@ function App() {
         <a target="_blank">
           <img src={reactLogo} className='logo react' alt="react logo" />
         </a>
-        <div></div>
+        <div>
+          {/* <HoverShinyEffect color="blue"/> */}
+        </div>
         <button onClick={() => toggleTheme()}>theme</button>
       </div>
     </main>
@@ -38,15 +41,19 @@ function App() {
 function toggleTheme() {
   var currentTheme = document.documentElement.getAttribute("data-theme");
   var targetTheme = "light";
-
   if (currentTheme === "light") {
       targetTheme = "dark";
   }
-  document.documentElement.setAttribute('data-theme', targetTheme)
+  console.log('Toggle: changed theme to ' + targetTheme);
+  document.documentElement.setAttribute('data-theme', targetTheme);
 }
 
 function themeLoader() {
-  document.documentElement.setAttribute('data-theme', "light");
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  if(currentTheme === null) {
+    document.documentElement.setAttribute('data-theme', 'light');
+    console.log('Loader: Set theme to light');
+  }
 }
 
 export default App;

@@ -1,8 +1,7 @@
 #root {
   color-scheme: light dark;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0rem;
 }
 
 .logo {
@@ -22,6 +21,10 @@
   background-color: var(--background);
   border-bottom: .1rem solid var(--text);
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  position: fixed;
   justify-content: space-between;
   padding: 0.2rem;
   button {
@@ -35,6 +38,7 @@
 
 main {
   flex-grow: 1;
+  text-align: center;
 } 
 
 .container {

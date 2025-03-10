@@ -9,7 +9,8 @@ import Contact from './Contact.tsx';
 import Projects from './Projects.tsx';
 
 const Root = () => <Outlet />;
-
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:3368142676.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2266204845.
 const router = createBrowserRouter([
   {
     path: "/",
