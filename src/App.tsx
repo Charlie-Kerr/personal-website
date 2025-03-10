@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import reactLogo from './assets/react.svg';
 import './App.css';
 import NavigationBar from './components/shared/navigation/NavigationBar';
+import FooterNavigation from './components/shared/navigation/FooterNavigation';
 
 function App() {
   const [] = useState(0);
@@ -23,6 +24,7 @@ function App() {
         <button onClick={() => toggleTheme()}>theme</button>
       </div>
     </main>
+    <FooterNavigation/>
     </>
   )
 }
