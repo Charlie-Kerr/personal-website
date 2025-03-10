@@ -28,9 +28,8 @@ function App() {
           <img src={reactLogo} className='logo react' alt="react logo" />
         </a>
         <div>
-          {/* <HoverShinyEffect color="blue"/> */}
+          <button onClick={() => toggleTheme()}>theme</button>
         </div>
-        <button onClick={() => toggleTheme()}>theme</button>
       </div>
     </main>
     </>
