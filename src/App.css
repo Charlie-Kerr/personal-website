@@ -16,6 +16,9 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+.small {
+  height: 2em;
+}
 
 .navigation-bar {
   background-color: var(--background);
@@ -93,4 +96,32 @@ button:focus-visible {
   a:nth-of-type(1) .logo {
     animation: logo-spin infinite 20s linear;
   }
+}
+.footer {
+  background-color: var(--background);
+  border-top: .1rem solid var(--text);
+  width: 100%;
+  align-items: center;
+}
+.footer-navigation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  button {
+    background-color: var(--background);
+    color: var(--text);
+    margin-bottom: .3rem;
+  }
+}
+.social-media {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+.invert-color{
+  filter: var(--invert);
 }

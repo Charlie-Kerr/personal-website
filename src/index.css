@@ -16,6 +16,7 @@ html[data-theme="light"] {
   --primary: rgb(34, 86, 104);
   --secondary: rgb(130, 199, 222);
   --accent: rgb(44, 166, 206);
+  --invert: invert(1);
 }
 html[data-theme="dark"] {
   --text: rgb(234, 243, 246);
@@ -23,6 +24,7 @@ html[data-theme="dark"] {
   --primary: rgb(151, 204, 221);
   --secondary: rgb(33, 102, 125);
   --accent: rgb(49, 171, 211);
+  --invert: invert(0);
 }
 
 body {
