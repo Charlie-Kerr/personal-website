@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import reactLogo from './assets/react.svg';
+import profile from './assets/profile.jpg';
 import './App.css';
 import NavigationBar from './components/shared/navigation/NavigationBar';
 import FooterNavigation from './components/shared/navigation/FooterNavigation';
@@ -14,7 +15,11 @@ function App() {
     <NavigationBar />
     <main>
       <div className='container'>
-        <h1>Welcome</h1>
+        <img src={profile} className='profile'></img>
+        <h1 className='margin-bottom-0'>I'm Charlie</h1>
+        <h5 className='margin-top-0'>Learning how to be a great developer.</h5>
+      </div>
+      <div className='container'>
         <a target="_blank">
           <img src={reactLogo} className='logo react' alt="react logo" />
         </a>
