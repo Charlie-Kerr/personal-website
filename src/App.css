@@ -144,4 +144,10 @@ button:focus-visible {
   max-width: 140px;
   margin: 3rem 0rem -3rem 0rem;
   border-radius: 50%;
+  border: 1px solid transparent;
+  transition: border-color 0.25s ease-in-out, border-width 0.25s ease-in-out;
+}
+.profile:hover {
+  border-color: var(--accent);
+  border-width: 10px;
 }
