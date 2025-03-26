@@ -37,6 +37,8 @@
   background-color: var(--background);
   box-sizing: border-box; /* Include padding and border in element's size */
   overflow-x: hidden; /* Hide horizontal overflow */
+  top: 0; /* Stay on top */
+  transition: top 0.3s;
   button {
     background-color: var(--background);
     /* border-width: 0.1rem;
@@ -63,6 +65,7 @@ main {
   padding: 2rem;
   box-sizing: border-box; /* Include padding and border in element's size */
   overflow-x: hidden;
+  background-color: var(--background);
 }
 
 button {

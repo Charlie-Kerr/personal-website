@@ -11,7 +11,7 @@ export default function NavigationBar() {
     return (
         <div className='navigation-bar'>
             <a target="_blank">
-                <img src={reactLogo} className="logo react small" alt="react logo"></img>
+                <img src={reactLogo} className="logo react small" alt="react logo" title="I was made with React!"></img>
             </a>
             <button onClick={() => handleClick('/home')}>Home</button>
             <button onClick={() => handleClick('/about')}>About</button>

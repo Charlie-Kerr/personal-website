@@ -27,6 +27,9 @@ function App() {
           <button onClick={() => toggleTheme()}>theme</button>
         </div>
       </div>
+      <div className='container'>
+        <h1>Graduate Computer Scientist</h1>
+      </div>
     </main>
     <FooterNavigation/>
     </>
