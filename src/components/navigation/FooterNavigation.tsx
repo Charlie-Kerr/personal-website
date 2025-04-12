@@ -1,8 +1,8 @@
 //https://react.dev/learn/importing-and-exporting-components
 import { useNavigate } from "react-router-dom";
-import github from '../../../assets/social/github.png';
-import linkedin from '../../../assets/social/LinkedIn.svg';
-import { GITHUB_LINK, LINKEDIN_LINK } from '../../../constants';
+import github from '../../assets/social/github.png';
+import linkedin from '../../assets/social/LinkedIn.svg';
+import { GITHUB_LINK, LINKEDIN_LINK } from '../../constants';
 
 
 export function SocialMedia() {
