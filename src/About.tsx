@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import NavigationBar from './components/shared/navigation/NavigationBar';
-import FooterNavigation from './components/shared/navigation/FooterNavigation';
+import NavigationBar from './components/navigation/NavigationBar';
+import FooterNavigation from './components/navigation/FooterNavigation';
 
 function About() {
   const [] = useState(0);
