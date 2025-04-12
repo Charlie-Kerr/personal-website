@@ -1,6 +1,6 @@
 //https://react.dev/learn/importing-and-exporting-components
 import { useNavigate } from "react-router-dom";
-import reactLogo from '../../../assets/react.svg';
+import reactLogo from '../../assets/react.svg';
 
 export default function NavigationBar() {
     const navigate = useNavigate();

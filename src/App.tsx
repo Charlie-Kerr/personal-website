@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import reactLogo from './assets/react.svg';
 import profile from './assets/profile.jpg';
 import './App.css';
-import NavigationBar from './components/shared/navigation/NavigationBar';
-import FooterNavigation from './components/shared/navigation/FooterNavigation';
+import NavigationBar from './components/navigation/NavigationBar';
+import FooterNavigation from './components/navigation/FooterNavigation';
 
 function App() {
   const [] = useState(0);
